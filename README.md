@@ -1,20 +1,52 @@
 dynapagin
 =========
 
-A jQuery plugin for managing client-side pagination. Works with Twitter
-Bootstrap 3, for styling purposes.
+A jQuery plugin for managing client-side pagination. Includes Stylesheet for
+basic styling, and is completely compatible with Boostrap 3's
+pagination component.
 
-## To Use
+## Usage
 
-```javascript
-$('#dynapagin-example').dynapagin({
-    total: 10
-}, function (page) {
-    $('#dynapagin-example-content').html('This is <em>Page '+page+'</em>!');
-}).on('page', function (event, page) {
-    console.log('another way to provide content to page '+page+'.');
-});
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dynapagin Complete Example</title>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="dynapagin-example-content"></div>
+    <div id="dynapagin-example"></div>
+    
+    <script type="application/javascript" src="jquery.min.js"></script>
+    <script type="application/javascript" src="js/dynapagin.min.js"></script>
+    <script type="application/javascript">
+      $(function () { 
+        $('#dynapagin-example').dynapagin({
+          total: 10
+        }, function (page) {
+          $('#dynapagin-example-content').html('<em>Page '+page+'</em>!');
+        }).on('page', function (event, page) {
+          console.log('another way to provide content to page '+page+'.');
+        });
+      });
+    </script>
+  </body>
+</html>
 ```
+### Prereqs
+The Only hard requirement of dynapagin is jQuery. However, you might also want
+to include some CSS to make the pagination selector presentable.
+
+#### Customizing The Style
+
+#### Using Bootstrap
+Dynapagin is completely compatible with Twitter's [Boostrap][1]. If you're using
+Boostrap dynapagin's selector will inherit the `.pagination` and `.pager`
+styles, including those of their child elements.
+
+[1]: http://getbootstrap.com/ "Boostrap"
+
 ### Options
 + **total**: (*REQUIRED*) The number of pages that will be in the pagination.
 + **pager**: Boolean flag to tell the plugin wether to provide a selection of
