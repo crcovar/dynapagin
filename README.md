@@ -38,14 +38,17 @@ pagination component.
 The Only hard requirement of dynapagin is jQuery. However, you might also want
 to include some CSS to make the pagination selector presentable.
 
-#### Customizing The Style
+### syle.css and syle.less
+The provided style.css was generated using [LESS][1]. The less file has been
+included in the project for convenience.
 
-#### Using Bootstrap
-Dynapagin is completely compatible with Twitter's [Boostrap][1]. If you're using
+### Using Bootstrap
+Dynapagin is completely compatible with Twitter's [Boostrap][2]. If you're using
 Boostrap dynapagin's selector will inherit the `.pagination` and `.pager`
 styles, including those of their child elements.
 
-[1]: http://getbootstrap.com/ "Boostrap"
+[1]: http://lesscss.org/ "LESS CSS"
+[2]: http://getbootstrap.com/ "Boostrap"
 
 ### Options
 + **total**: (*REQUIRED*) The number of pages that will be in the pagination.
