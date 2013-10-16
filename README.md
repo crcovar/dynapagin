@@ -18,7 +18,7 @@ pagination component.
     <div id="dynapagin-example-content"></div>
     <div id="dynapagin-example"></div>
     
-    <script type="application/javascript" src="jquery.min.js"></script>
+    <script type="application/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="application/javascript" src="js/dynapagin.min.js"></script>
     <script type="application/javascript">
       $(function () { 
