@@ -34,4 +34,5 @@ You can attach an event handler to the dynapagin element for an additional level
 of control.
 
 ## License
-Dynapagin is licensed under the MIT License.
+Dynapagin is licensed under the MIT License. Full text of the license can be
+read [here](https://raw.github.com/crcovar/dynapagin/master/LICENSE)
