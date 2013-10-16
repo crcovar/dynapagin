@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Dynapagin : A jQuery plugin for managing client-side pagination." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Dynapagin</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/crcovar/dynapagin">View on GitHub</a>
+
+          <h1 id="project_title">Dynapagin</h1>
+          <h2 id="project_tagline">A jQuery plugin for managing client-side pagination.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/crcovar/dynapagin/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/crcovar/dynapagin/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="dynapagin" class="anchor" href="#dynapagin"><span class="octicon octicon-link"></span></a>dynapagin</h1>
+
+<p>A jQuery plugin for managing client-side pagination. Works with Twitter
+Bootstrap 3, for styling purposes.</p>
+
+<h2>
+<a name="to-use" class="anchor" href="#to-use"><span class="octicon octicon-link"></span></a>To Use</h2>
+
+<div class="highlight highlight-javascript"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'#dynapagin-example'</span><span class="p">).</span><span class="nx">dynapagin</span><span class="p">({</span>
+    <span class="nx">total</span><span class="o">:</span> <span class="mi">10</span>
+<span class="p">},</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">page</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'#dynapagin-example-content'</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="s1">'This is &lt;em&gt;Page '</span><span class="o">+</span><span class="nx">page</span><span class="o">+</span><span class="s1">'&lt;/em&gt;!'</span><span class="p">);</span>
+<span class="p">}).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'page'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">event</span><span class="p">,</span> <span class="nx">page</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'another way to provide content to page '</span><span class="o">+</span><span class="nx">page</span><span class="o">+</span><span class="s1">'.'</span><span class="p">);</span>
+<span class="p">});</span>
+</pre></div>
+
+<h3>
+<a name="options" class="anchor" href="#options"><span class="octicon octicon-link"></span></a>Options</h3>
+
+<ul>
+<li>
+<em>pager</em>: Boolean flag to tell the plugin wether to provide a selection of
+pages or just previous and next buttons</li>
+<li>
+<em>total</em>: The number of pages that will be in the pagination</li>
+<li>
+<em>page</em>: The starting page to display</li>
+<li>
+<em>previous</em>: Text to use for previous button</li>
+<li>
+<em>next</em>: Text to use for next button</li>
+</ul><h3>
+<a name="content" class="anchor" href="#content"><span class="octicon octicon-link"></span></a>Content</h3>
+
+<p>Dynapagin provides for an optional callback that will be called on load and when
+a page change occurs. It recieves as a parameter the number of the page that is
+expected to be loaded.</p>
+
+<p>Dynapagin also fires off <code>page</code> events that occur when a page change occurs.
+Just like the callback method the number of the new page passed as a parameter.
+You can attach an event handler to the dynapagin element for an additional level
+of control.</p>
+
+<h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>Dynapagin is licensed under the MIT License. Full text of the license can be
+read <a href="https://raw.github.com/crcovar/dynapagin/master/LICENSE">here</a></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Dynapagin maintained by <a href="https://github.com/crcovar">crcovar</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
