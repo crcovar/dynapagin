@@ -1,0 +1,53 @@
+@background: #fff;
+@foreground: #3379b5;
+
+@borderColor: darken(white, 16%);
+@radius: 4px;
+
+@activeBackground: @foreground;
+@activeText: @background;
+
+.dynapagin-selector {
+    border-radius: 4px;
+    font-family: sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+    li {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        a {
+            background-color: @background;
+            color: @foreground;
+            
+            border-top: 1px solid @borderColor;
+            border-bottom: 1px solid @borderColor;
+            border-right: 1px solid @borderColor;
+            
+            padding: .2em 1em;
+            text-decoration: none;
+            
+            &:hover { background-color: darken(@background, 8%); }
+        }
+        &.previous a {
+            border-left: 1px solid @borderColor;
+            border-top-left-radius: @radius;
+            border-bottom-left-radius: @radius;
+        }
+        &.next a {
+            border-top-right-radius: @radius;
+            border-bottom-right-radius: @radius;
+        }
+        &.active a {
+            color: @activeText;
+            background-color: @activeBackground;
+            border: 1px solid @activeBackground;
+        }
+        &.disabled a {
+            color: @borderColor;
+            &:hover { background-color: @background; }
+        }
+    }
+}

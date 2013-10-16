@@ -16,12 +16,12 @@ $('#dynapagin-example').dynapagin({
 });
 ```
 ### Options
-+ *pager*: Boolean flag to tell the plugin wether to provide a selection of
-    pages or just previous and next buttons
-+ *total*: The number of pages that will be in the pagination
-+ *page*: The starting page to display
-+ *previous*: Text to use for previous button
-+ *next*: Text to use for next button
++ **total**: (*REQUIRED*) The number of pages that will be in the pagination.
++ **pager**: Boolean flag to tell the plugin wether to provide a selection of
+    pages or just previous and next buttons. Defaults to `false`.
++ **page**: The starting page to display. Defaults to first page.
++ **previous**: Text to use for previous button. Defaults to "&laquo;"
++ **next**: Text to use for next button. Defaults to "&raquo;"
 
 ### Content
 Dynapagin provides for an optional callback that will be called on load and when
