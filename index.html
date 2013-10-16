@@ -31,39 +31,74 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h1>
-<a name="dynapagin" class="anchor" href="#dynapagin"><span class="octicon octicon-link"></span></a>dynapagin</h1>
-
-<p>A jQuery plugin for managing client-side pagination. Works with Twitter
-Bootstrap 3, for styling purposes.</p>
+        <p>A jQuery plugin for managing client-side pagination. Includes Stylesheet for
+basic styling, and is completely compatible with Boostrap 3's
+pagination component.</p>
 
 <h2>
-<a name="to-use" class="anchor" href="#to-use"><span class="octicon octicon-link"></span></a>To Use</h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
 
-<div class="highlight highlight-javascript"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'#dynapagin-example'</span><span class="p">).</span><span class="nx">dynapagin</span><span class="p">({</span>
-    <span class="nx">total</span><span class="o">:</span> <span class="mi">10</span>
-<span class="p">},</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">page</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">$</span><span class="p">(</span><span class="s1">'#dynapagin-example-content'</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="s1">'This is &lt;em&gt;Page '</span><span class="o">+</span><span class="nx">page</span><span class="o">+</span><span class="s1">'&lt;/em&gt;!'</span><span class="p">);</span>
-<span class="p">}).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'page'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">event</span><span class="p">,</span> <span class="nx">page</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'another way to provide content to page '</span><span class="o">+</span><span class="nx">page</span><span class="o">+</span><span class="s1">'.'</span><span class="p">);</span>
-<span class="p">});</span>
+<div class="highlight highlight-html"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Dynapagin Complete Example<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"stylesheets/style.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"dynapagin-example-content"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"dynapagin-example"</span><span class="nt">&gt;&lt;/div&gt;</span>
+
+    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"application/javascript"</span> <span class="na">src=</span><span class="s">"//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"application/javascript"</span> <span class="na">src=</span><span class="s">"js/dynapagin.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"application/javascript"</span><span class="nt">&gt;</span>
+      <span class="nx">$</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span> 
+        <span class="nx">$</span><span class="p">(</span><span class="s1">'#dynapagin-example'</span><span class="p">).</span><span class="nx">dynapagin</span><span class="p">({</span>
+          <span class="nx">total</span><span class="o">:</span> <span class="mi">10</span>
+        <span class="p">},</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">page</span><span class="p">)</span> <span class="p">{</span>
+          <span class="nx">$</span><span class="p">(</span><span class="s1">'#dynapagin-example-content'</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="s1">'&lt;em&gt;Page '</span><span class="o">+</span><span class="nx">page</span><span class="o">+</span><span class="s1">'&lt;/em&gt;!'</span><span class="p">);</span>
+        <span class="p">}).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'page'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">event</span><span class="p">,</span> <span class="nx">page</span><span class="p">)</span> <span class="p">{</span>
+          <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'another way to provide content to page '</span><span class="o">+</span><span class="nx">page</span><span class="o">+</span><span class="s1">'.'</span><span class="p">);</span>
+        <span class="p">});</span>
+      <span class="p">});</span>
+    <span class="nt">&lt;/script&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
 </pre></div>
+
+<h3>
+<a name="prereqs" class="anchor" href="#prereqs"><span class="octicon octicon-link"></span></a>Prereqs</h3>
+
+<p>The Only hard requirement of dynapagin is jQuery. However, you might also want
+to include some CSS to make the pagination selector presentable.</p>
+
+<h3>
+<a name="stylecss-and-styleless" class="anchor" href="#stylecss-and-styleless"><span class="octicon octicon-link"></span></a>style.css and style.less</h3>
+
+<p>The provided style.css was generated using <a href="http://lesscss.org/" title="LESS CSS">LESS</a>. The less file has been
+included in the project for convenience.</p>
+
+<h3>
+<a name="using-bootstrap" class="anchor" href="#using-bootstrap"><span class="octicon octicon-link"></span></a>Using Bootstrap</h3>
+
+<p>Dynapagin is completely compatible with Twitter's <a href="http://getbootstrap.com/" title="Boostrap">Boostrap</a>. If you're using
+Boostrap dynapagin's selector will inherit the <code>.pagination</code> and <code>.pager</code>
+styles, including those of their child elements.</p>
 
 <h3>
 <a name="options" class="anchor" href="#options"><span class="octicon octicon-link"></span></a>Options</h3>
 
 <ul>
 <li>
-<em>pager</em>: Boolean flag to tell the plugin wether to provide a selection of
-pages or just previous and next buttons</li>
+<strong>total</strong>: (<em>REQUIRED</em>) The number of pages that will be in the pagination.</li>
 <li>
-<em>total</em>: The number of pages that will be in the pagination</li>
+<strong>pager</strong>: Boolean flag to tell the plugin wether to provide a selection of
+pages or just previous and next buttons. Defaults to <code>false</code>.</li>
 <li>
-<em>page</em>: The starting page to display</li>
+<strong>page</strong>: The starting page to display. Defaults to first page.</li>
 <li>
-<em>previous</em>: Text to use for previous button</li>
+<strong>previous</strong>: Text to use for previous button. Defaults to "«"</li>
 <li>
-<em>next</em>: Text to use for next button</li>
+<strong>next</strong>: Text to use for next button. Defaults to "»"</li>
 </ul><h3>
 <a name="content" class="anchor" href="#content"><span class="octicon octicon-link"></span></a>Content</h3>
 
