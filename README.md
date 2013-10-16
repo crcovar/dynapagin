@@ -38,7 +38,7 @@ pagination component.
 The Only hard requirement of dynapagin is jQuery. However, you might also want
 to include some CSS to make the pagination selector presentable.
 
-### syle.css and syle.less
+### style.css and style.less
 The provided style.css was generated using [LESS][1]. The less file has been
 included in the project for convenience.
 
