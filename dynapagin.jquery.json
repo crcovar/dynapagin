@@ -1,0 +1,26 @@
+{
+    "name": "dynapagin",
+    "version": "1.0.0",
+    "title": "Dynamic Pagination",
+    "author": {
+        "name": "Charles Covar",
+        "email": "covar1@gmail.com",
+        "url": "http://charlescovar.com"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://raw.github.com/crcovar/dynapagin/master/LICENSE"
+        }
+    ],
+    "dependencies": {
+        "jquery": ">=1.10"
+    },
+    "description": "A jQuery plugin for managing client-side pagination. Includes a stylesheet for basic styling, and is completely compatible with Boostrap 3's pagination component.",
+    "keywords": [
+        "pagination",
+        "bootstrap",
+        "dynamic"
+    ],
+    "homepage": "http://crcovar.github.io/dynapagin/"
+}

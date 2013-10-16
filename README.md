@@ -1,7 +1,7 @@
 dynapagin
 =========
 
-A jQuery plugin for managing client-side pagination. Includes Stylesheet for
+A jQuery plugin for managing client-side pagination. Includes a stylesheet for
 basic styling, and is completely compatible with Boostrap 3's
 pagination component.
 
