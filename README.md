@@ -12,7 +12,7 @@ pagination component.
 <html>
   <head>
     <title>Dynapagin Complete Example</title>
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="stylesheets/style.css" rel="stylesheet" />
   </head>
   <body>
     <div id="dynapagin-example-content"></div>
