@@ -35,4 +35,4 @@ of control.
 
 ## License
 Dynapagin is licensed under the MIT License. Full text of the license can be
-read (here)[https://raw.github.com/crcovar/dynapagin/master/LICENSE]
+read [here](https://raw.github.com/crcovar/dynapagin/master/LICENSE)
